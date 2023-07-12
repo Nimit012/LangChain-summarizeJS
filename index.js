@@ -7,7 +7,7 @@ import * as fs from "fs";
 
 const run = async () => {
     // In this example, we use a `MapReduceDocumentsChain` specifically prompted to summarize a set of documents.
-  let openai_api_key = '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';
+  let openai_api_key = '###';
   const text = fs.readFileSync("state_of_the_union.txt", "utf8");
   const model = new OpenAI({ temperature: 0, openAIApiKey: openai_api_key });
   const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 100, chunkOverlap: 0 });
